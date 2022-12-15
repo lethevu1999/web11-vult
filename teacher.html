@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" main="IE=edge">
+    <meta name="viewport" main="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/teacher.css">
+    <link rel="stylesheet" href="./css/layout/main.css">
+    <link rel="stylesheet" href="./css/layout/sidebar.css">
+    <link rel="stylesheet" href="./css/layout/header.css">
+    <link rel="stylesheet" href="./css/layout/dialog-add.css">
+    <link rel="stylesheet" href="./css/layout/toast-message.css">
+
+    <title>Teacher</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar-header">
+            <div class="icon" style="background: url(./assets/icons/ic_IconThietBi.svg);"></div>
+            <div class="text">Thiết bị</div>
+        </div>
+        <div class="sidebar">
+            <div class="navbar item1">
+                <div class="icon" style="background: url(./assets/icons/ic_TongQuan.svg); "></div>
+                <div class="text">Tổng quan</div>
+            </div>
+            <div class="navbar item2">
+                <div class="icon" style="background: url(./assets/icons/ic_ThietBi.svg);"></div>
+                <div class="text">Thiết bị</div>
+            </div>
+            <div class="navbar item3">
+                <div class="icon" style="background: url(./assets/icons/ic_MuonTra.svg);"></div>
+                <div class="text">Mượn trả</div>
+            </div>
+            <div class="navbar item4">
+                <div class="icon" style="background: url(./assets/icons/ic_BaoCao.svg);"></div>
+                <div class="text">Báo cáo</div>
+            </div>
+            <div class="navbar item5">
+                <div class="icon" style="background: url(./assets/icons/ic_HeThong.svg);"></div>
+                <div class="text">Hệ thống</div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header-left">
+                <div class="header-content">
+                    <div class="header-title">Cán bộ, giáo viên</div>
+                    <div class="icon"></div>
+                </div>
+                <div class="icon-notification">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="permission">Admin</div>
+                <div class="chevron"></div>
+                <div class="avatar"></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-header">
+                <div class="main-header-left">
+                    <div class="main-header-input">
+                        <div class="input-box">
+                            <input type="text" class="input-teacher">
+                        </div>
+                        <div class="input-icon-box">
+                            <div class="input-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-header-right">
+                    <button class="btn-add">Thêm</button>
+                    <button class="btn-export">Xuất khẩu</button>
+                    <button class="btn-more">
+                        <div class="icon-more"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="main-page">
+                <table class="main-table">
+                    <tr class="heading">
+                        <td class="check">
+                            <div class="check-box"></div>
+                        </td>
+                        <td class="teacher-code">Số hiệu cán bộ</td>
+                        <td class="teacher-name">Họ và tên</td>
+                        <td class="phone-number">Số điện thoại</td>
+                        <td class="specialize">Tổ chuyên môn</td>
+                        <td class="subject">QL theo môn</td>
+                        <td class="room">QL kho phòng</td>
+                        <td class="training">Đào tạo QLTB</td>
+                        <td class="working">Đang làm việc</td>
+                        <td class="manager"></td>
+                    </tr>
+                </table>
+
+
+
+                <!-- <div class="page-row heading">
+                    <div class="check"></div>
+                    <div class="teacher-code">Số hiệu cán bộ</div>
+                    <div class="teacher-name">Họ và tên</div>
+                    <div class="phone-number">Số điện thoại</div>
+                    <div class="specialize">Tổ chuyên môn</div>
+                    <div class="subject">QL theo môn</div>
+                    <div class="room">QL kho phòng</div>
+                    <div class="training">Đào tạo QLTB</div>
+                    <div class="working">Đang làm việc</div>
+                    <div class="manager"></div>
+                </div> -->
+
+            </div>
+            <div class="main-paging">
+                <div class="btn-box">
+                    <div class="btn move-to-first"></div>
+                </div>
+                <div class="btn-box">
+                    <div class="btn previous"></div>
+                </div>
+                <div class="current-page">1</div>
+                <div class="btn-box">
+                    <div class="btn next"></div>
+                </div>
+                <div class="btn-box">
+                    <div class="btn move-to-last"></div>
+                </div>
+                <div class="paging-text-1">1/2 trang</div>
+                <div class="paging-text-2">(56 giáo viên)</div>
+            </div>
+        </div>
+
+
+        <div class="dialog-container" style="display: none;">
+            <div class="dialog-add">
+                <div class="dialog-left">
+                    <div class="dialog-image"></div>
+                    <div class="btn-image">Chọn ảnh</div>
+                    <div class="text-teacher-name">Họ và tên</div>
+                    <div class="text-teacher-code">Số hiệu cán bộ</div>
+                </div>
+                <div class="dialog-line"></div>
+                <div class="dialog-right">
+                    <div class="dialog-name">
+                        <div>Thêm hồ sơ cán bộ, giáo viên</div>
+                        <div class="dialog-btn-close"></div>
+                    </div>
+                    <div class="dialog-information">
+                        <div class="info">
+                            <div class="info-text">Số hiệu cán bộ</div>
+                            <p style="color: red;"> * </p>
+                            <div class="input-box">
+                                <input id="txtTeacherCode" type="text" class="input-left teacher-code">
+                            </div>
+
+                        </div>
+                        <div class="info">
+                            <div class="info-text">Họ và tên</div>
+                            <p style="color: red;"> * </p>
+                            <div class="input-box">
+                                <input id="txtTeacherName" type="text" class="input-right teacher-name">
+                            </div>
+
+                        </div>
+                        <div class="info">
+                            <div class="info-text">Số điện thoại</div>
+                            <div class="input-box">
+                                <input id="txtTelephoneNumber" type="text" class="input-left telephone-number">
+                            </div>
+
+                        </div>
+                        <div class="info">
+                            <div class="info-text">Email</div>
+                            <div class="input-box">
+                                <input id="txtEmail" type="text" class="input-right email">
+                            </div>
+
+                        </div>
+                        <div class="info">
+                            <div class="info-text">Tổ bộ môn</div>
+                            <div class="input-box select group">
+                                <div class="btn-select"></div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="info-text">QL theo môn</div>
+                            <div class="input-box select subject">
+                                <div class="btn-select"></div>
+                            </div>
+                        </div>
+                        <div class="info item7">
+                            <div class="info-text">QL kho, phòng</div>
+                            <div class="input-box select room">
+                                <div class="btn-select"></div>
+                            </div>
+                        </div>
+                        <div class="info item8">
+                            <div class="check">
+                                <div class="uncheck"></div>
+                                <div class="check-text">Trình độ nghiệp vụ QLTB</div>
+                            </div>
+                            <div class="check">
+                                <div class="checked"></div>
+                                <div class="check-text">Đang làm việc</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialog-button">
+                        <div class="btn btn-close">Đóng</div>
+                        <div class="btn btn-save">Lưu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast-message-container">
+            <div class="toast-message">
+                <div class="toast-message-left">
+                    <div class="toast-message-img"></div>
+                    <div class="toast-message-text">
+                        <div class="toast-message-title">Lỗi</div>
+                        <div class="toast-message-content"></div>
+                    </div>
+                </div>
+                <div class="toast-message-close"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="./js/jquery-3.6.2.min.js"></script>
+<script src="./js/teacher.js"></script>

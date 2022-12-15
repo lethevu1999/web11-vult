@@ -1,0 +1,21 @@
+body
+{
+    font-family: Roboto;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 56px calc(100vh - 56px);
+}
+
+.input-error{
+    border-color: red;
+}
+
+
+
+
+

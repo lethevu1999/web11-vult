@@ -1,0 +1,85 @@
+.header{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 10px grey;
+}
+
+
+.header-left{
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: calc(100% - 150px);
+    height: calc(100% - 16px);
+    align-items: center;
+    border-right: 1px solid;
+    border-right-color: #66666654;
+    padding: 0px 4px 0px 16px;
+    box-sizing: border-box;
+
+}
+
+.header-content{
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: calc(100% - 33px);
+    align-items: center;
+
+}
+
+.header-title{
+    font-size: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-wrap: nowrap;
+    color: #141414;
+}
+
+.header-content .icon{
+    background-image: url(/assets/icons/ic_Help.png);
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 24px;
+}
+
+.icon-notification{
+    background-image: url(/assets/icons/ic_Notification_32.png);
+    height: 33px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 32px;
+}
+
+.header-right{
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 150px;
+    height: 100%;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.permission{
+    font-size: 14px;
+}
+
+.chevron{
+    background: url(/assets/icons/ic_Chevron.png);
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    height: 24px;
+    margin-left: 16px;
+}
+
+.avatar{
+    background: url(/assets/icons/ic_Avatar_36.png);
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 36px;
+    height: 36px;
+}

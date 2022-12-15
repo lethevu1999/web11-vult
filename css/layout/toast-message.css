@@ -1,0 +1,55 @@
+.toast-message-container {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.toast-message {
+    display: flex;
+    border-radius: 4px;
+    min-width: 300px;
+    min-height: 80px;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px;
+    border-left: solid 8px var(--delete-color);
+    align-items: center;
+    padding: 18px;
+    justify-content: space-between;
+}
+
+.toast-message-left {
+    display: flex;
+}
+
+.toast-message-img {
+    background-image: url(../../assets/Icons/ic_ToastMessage_Fail.png);
+    width: 40px;
+    height: 40px;
+}
+
+.toast-message-text {
+    margin-left: 18px;
+}
+
+.toast-message-title {
+    font-family: Opensand-bold;
+    font-size: 16px;
+}
+
+.toast-message-content {
+    font-size: 13px;
+}
+
+.toast-message-close {
+    background-image: url(../../assets/Icons/ic_X_40.png);
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+}
